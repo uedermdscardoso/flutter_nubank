@@ -22,60 +22,61 @@ class MenuApp extends StatelessWidget {
         child: Container(
           //color: Colors.red,
           height: MediaQuery.of(context).size.height * 0.55,
-          child: Column(
-            children: <Widget>[
-              Image.network(
-                'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Codigo_QR.svg/1200px-Codigo_QR.svg.png',
-                height: 92,
-                color: Colors.white,
-              ),
-              Text.rich(
-                TextSpan(
-                  text: 'Banco ',
-                  children: [
-                    TextSpan(
-                      text: '260 - Nu Pagamentos S.A',
-                      style: TextStyle(
-                        fontWeight: FontWeight.bold
-                      )
-                    )
-                  ]
+          child: SingleChildScrollView(
+            physics: BouncingScrollPhysics(),
+            child: Column(
+              children: <Widget>[
+                Image.network(
+                  'https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Codigo_QR.svg/1200px-Codigo_QR.svg.png',
+                  height: 92,
+                  color: Colors.white,
                 ),
-                style: TextStyle(fontSize: 12),
-              ),
-              SizedBox(height: 5),
-              Text.rich(
-                TextSpan(
-                    text: 'Agência ',
+                Text.rich(
+                  TextSpan(
+                    text: 'Banco ',
                     children: [
                       TextSpan(
-                          text: '0001',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold
-                          )
+                        text: '260 - Nu Pagamentos S.A',
+                        style: TextStyle(
+                          fontWeight: FontWeight.bold
+                        )
                       )
                     ]
+                  ),
+                  style: TextStyle(fontSize: 12),
                 ),
-                style: TextStyle(fontSize: 12),
-              ),
-              SizedBox(height: 5),
-              Text.rich(
-                TextSpan(
-                    text: 'Conta ',
-                    children: [
-                      TextSpan(
-                          text: '0000000-0',
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold
-                          )
-                      )
-                    ]
+                SizedBox(height: 5),
+                Text.rich(
+                  TextSpan(
+                      text: 'Agência ',
+                      children: [
+                        TextSpan(
+                            text: '0001',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold
+                            )
+                        )
+                      ]
+                  ),
+                  style: TextStyle(fontSize: 12),
                 ),
-                style: TextStyle(fontSize: 12),
-              ),
-              SizedBox(height: 25),
-              SingleChildScrollView(
-                child: Padding(
+                SizedBox(height: 5),
+                Text.rich(
+                  TextSpan(
+                      text: 'Conta ',
+                      children: [
+                        TextSpan(
+                            text: '0000000-0',
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold
+                            )
+                        )
+                      ]
+                  ),
+                  style: TextStyle(fontSize: 12),
+                ),
+                SizedBox(height: 25),
+                Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 30),
                   child: Column(
                       children: <Widget>[
@@ -107,9 +108,9 @@ class MenuApp extends StatelessWidget {
                         ),
                       ],
                   ),
-                ),
-              )
-            ],
+                )
+              ],
+            ),
           ),
         ),
       ),
