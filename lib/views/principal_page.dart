@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:nubank_flutter/widgets/item_menu_bottom.dart';
 import 'package:nubank_flutter/widgets/menu_app.dart';
 import 'package:nubank_flutter/widgets/my_dots.dart';
 import 'package:nubank_flutter/widgets/page_view_app.dart';
@@ -98,6 +99,36 @@ class PrincipalPageState extends State<PrincipalPage> {
             showMenu: _showMenu, //Ocultando os dots caso _showMenu é true
             top: _screenHeight * .70,
             currentIndex: _currentIndex
+          ),
+
+          AnimatedPositioned(
+            duration: Duration(milliseconds: 200),
+            bottom: !_showMenu ? 0 + MediaQuery.of(context).padding.bottom + 20 : 0, //se não aparecer o menu
+            left: 0,
+            right: 0,
+            height: _screenHeight * 0.13,
+            child: AnimatedOpacity( //Para sumir
+              duration: Duration(milliseconds: 200),
+              opacity: !_showMenu ? 1 : 0,
+              child: Container(
+                child: ListView(
+                  physics: BouncingScrollPhysics(),
+                  scrollDirection: Axis.horizontal,
+                  children: <Widget>[
+                    ItemMenuBottom(icon: Icons.person_add, text: 'indicar amigos'),
+                    ItemMenuBottom(icon: Icons.phone_android, text: 'Recarga de celular'),
+                    ItemMenuBottom(icon: Icons.chat, text: 'Cobrar'),
+                    ItemMenuBottom(icon: Icons.monetization_on, text: 'Empréstimos'),
+                    ItemMenuBottom(icon: Icons.move_to_inbox, text: 'Depositar'),
+                    ItemMenuBottom(icon: Icons.mobile_screen_share, text: 'Transferir'),
+                    ItemMenuBottom(icon: Icons.format_align_center, text: 'Ajustar limite'),
+                    ItemMenuBottom(icon: Icons.chrome_reader_mode, text: 'Pagar'),
+                    ItemMenuBottom(icon: Icons.lock_open, text: 'Bloquear cartão')
+
+                  ],
+                ),
+              ),
+            ),
           )
         ],
       )
