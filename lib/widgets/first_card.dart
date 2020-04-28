@@ -17,6 +17,7 @@ class FirstCard extends StatelessWidget {
                   Expanded( //Ocupe a parte inteira
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start, //Alinhando os textos no começo
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         children: <Widget>[
                           Padding( //Onde fica o icone do cartão de crédito
                             padding: const EdgeInsets.all(20),
@@ -67,14 +68,15 @@ class FirstCard extends StatelessWidget {
                                       ),
                                       textAlign: TextAlign.start,
                                       style: TextStyle(
-                                          color: Colors.grey,
+                                          color: Colors.black,
                                           fontSize: 12
                                       )
                                   )
                                 ],
                               ),
                             ),
-                          )
+                          ),
+                          SizedBox(height: MediaQuery.of(context).size.height * 0.05)
                         ]
                       )
                   ),
@@ -110,11 +112,11 @@ class FirstCard extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Icon(Icons.shopping_cart, color: Colors.grey),
-                    SizedBox(width: 5), //Espaçamento
+                    SizedBox(width: 10), //Espaçamento
                     Flexible( //Quebrar o texto
                       child: Text(
                         'Compra mais recente em supermercado no valor de R\$ 65,00 segunda',
-                        style: TextStyle(color: Colors.grey, fontSize: 13),
+                        style: TextStyle(color: Colors.black, fontSize: 13),
                       ),
                     ),
                     Icon(Icons.chevron_right, color: Colors.grey[400], size: 18)

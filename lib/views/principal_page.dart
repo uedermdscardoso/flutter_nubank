@@ -60,6 +60,12 @@ class PrincipalPageState extends State<PrincipalPage> {
             showMenu: _showMenu,
           ),
 
+          MyDots( //Posicionar
+              showMenu: _showMenu, //Ocultando os dots caso _showMenu é true
+              top: _screenHeight * .70,
+              currentIndex: _currentIndex
+          ),
+
           PageViewApp( //Quadro branco
             top: _yPosition, //!_showMenu ? _screenHeight * .24 : _screenHeight * .75,
             showMenu: _showMenu,
@@ -99,11 +105,6 @@ class PrincipalPageState extends State<PrincipalPage> {
                 }
               });
             },
-          ),
-          MyDots( //Posicionar
-            showMenu: _showMenu, //Ocultando os dots caso _showMenu é true
-            top: _screenHeight * .70,
-            currentIndex: _currentIndex
           ),
 
         ],

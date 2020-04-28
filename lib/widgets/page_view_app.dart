@@ -2,6 +2,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:nubank_flutter/widgets/card_app.dart';
 import 'package:nubank_flutter/widgets/first_card.dart';
+import 'package:nubank_flutter/widgets/second_card.dart';
+import 'package:nubank_flutter/widgets/third_card.dart';
 
 class PageViewApp extends StatelessWidget {
   final double top;
@@ -29,8 +31,8 @@ class PageViewApp extends StatelessWidget {
                 physics: showMenu ? NeverScrollableScrollPhysics() : BouncingScrollPhysics(), //Não mover quando a condição for verdadeira
                 children: <Widget>[
                   CardApp(child: FirstCard()),
-                  CardApp(),
-                  CardApp()
+                  CardApp(child: SecondCard()),
+                  CardApp(child: ThirdCard())
                 ]
           ),
         ),

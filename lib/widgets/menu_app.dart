@@ -88,7 +88,7 @@ class MenuApp extends StatelessWidget {
                         ItemMenu( icon: Icons.phone_android,text: 'Configurações do app'),
                         SizedBox(height: 15),
                         Container(
-                          height: 35,
+                          height: 40,
                           width: double.infinity,
                           decoration: BoxDecoration(
                             border: Border.all(width: 0.7, color: Colors.white54)
@@ -102,7 +102,7 @@ class MenuApp extends StatelessWidget {
                             highlightElevation: 0,
                             hoverElevation: 0,
                             splashColor: Colors.purple[900],
-                            child: Text('SAIR DO APP', style: TextStyle(fontSize: 10)),
+                            child: Text('SAIR DO APP', style: TextStyle(fontWeight: FontWeight.bold, fontSize: 10)),
                             onPressed: (){},
                           ),
                         ),
