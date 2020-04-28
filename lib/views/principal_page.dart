@@ -1,10 +1,9 @@
 
 import 'package:flutter/material.dart';
-import 'package:nubank_flutter/widgets/bottom_menu.dart';
-import 'package:nubank_flutter/widgets/item_menu_bottom.dart';
-import 'package:nubank_flutter/widgets/menu_app.dart';
-import 'package:nubank_flutter/widgets/my_dots.dart';
-import 'package:nubank_flutter/widgets/page_view_app.dart';
+import 'package:nubank_flutter/widgets/bottom_menu/bottom_menu.dart';
+import 'package:nubank_flutter/widgets/menu/menu_app.dart';
+import 'package:nubank_flutter/widgets/page_view/my_dots.dart';
+import 'package:nubank_flutter/widgets/page_view/page_view_app.dart';
 import 'package:nubank_flutter/widgets/principal_page_bar.dart';
 
 class PrincipalPage extends StatefulWidget {
@@ -32,7 +31,7 @@ class PrincipalPageState extends State<PrincipalPage> {
   Widget build(BuildContext context) {
 
     double _screenHeight = MediaQuery.of(context).size.height;
-    if(_yPosition == null) {
+    if(_yPosition == 0 || _yPosition == null) {
       _yPosition = _screenHeight * .24;
     }
 

@@ -16,13 +16,26 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5_API_R" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="1fbb8441" />
   <component name="ProjectId" id="1b6LhYaaxIexyK6gZEuPQr8DEoF" />
   <component name="PropertiesComponent">
     <property name="dart.analysis.tool.window.force.activate" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\User\AndroidStudioProjects\nubank_flutter\lib\widgets\page_view" />
+      <recent name="C:\Users\User\AndroidStudioProjects\nubank_flutter\lib\widgets\cards" />
+      <recent name="C:\Users\User\AndroidStudioProjects\nubank_flutter\lib\widgets\menu" />
+      <recent name="C:\Users\User\AndroidStudioProjects\nubank_flutter\lib\widgets\bottom_menu" />
+      <recent name="C:\Users\User\AndroidStudioProjects\nubank_flutter\lib\widgets" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">

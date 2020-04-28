@@ -27,8 +27,8 @@ class PrincipalPageBar extends StatelessWidget {
                 new Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: <Widget>[
-                    Image.network(
-                        "https://logodownload.org/wp-content/uploads/2019/08/nubank-logo-3.png",
+                    Image.asset(
+                        "assets/images/nubank-logo.png",
                         height: 30,
                         color: Colors.white
                     ),
